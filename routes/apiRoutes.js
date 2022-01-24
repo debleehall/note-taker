@@ -9,9 +9,9 @@ const router = require('express').Router();
 // GET /api/notes (return db.json)
 router.get('/api/notes', (req, res) => {
     let results = notes;
-    if (req.query) {
-        results = filterByQuery(req.query, results);
-    }
+    // if (req.query) {
+    //     results = filterByQuery(req.query, results);
+    // }
     res.json(results);
 });
 
